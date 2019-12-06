@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Flack
+{% endblock %}
+
+{% block content %}
+
+<h4 style="color:rgb(23, 86, 180);"><b>Enter your username</b></h4>
+<form action="/signin" method="POST">
+    <div class="form-group">
+    
+        <input type="text" class="form-control" id="username" name="username" autofocus aria-describedby="userHelp" placeholder="Example:liz">
+    </div>
+    <button class="btn btn-primary" type="submit">Sign In</button>
+</form>
+
+{% endblock %}
